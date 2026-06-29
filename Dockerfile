@@ -25,5 +25,10 @@ RUN sed -i '/^# Generate a new self signed SSL certificate/,/^fi$/d' /usr/local/
 
 EXPOSE 80
 
+# Default runtime configuration
+ENV PORT=80
+ENV DB_DRIVER=sqlite
+
+
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s --retries=3 \
   CMD curl -f http://localhost:${PORT:-80}/healthcheck.php || exit 1
