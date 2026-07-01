@@ -35,7 +35,7 @@ Kanboard is pre-configured for SQLite — deploy and start using it immediately.
 | `DB_USERNAME` | — | Database username (required for MySQL/Postgres) |
 | `DB_PASSWORD` | — | Database password (required for MySQL/Postgres) |
 | `DB_PORT` | — | Database port (optional, defaults to driver default) |
-| `MAIL_FROM` | — | From address for email notifications |
+| `MAIL_FROM` | `notifications@localhost` | From address for email notifications |
 | `MAIL_TRANSPORT` | `smtp` | Mail transport: `smtp`, `sendmail`, or `mail` (use `smtp` for Docker) |
 | `MAIL_SMTP_HOSTNAME` | — | SMTP server hostname |
 | `MAIL_SMTP_PORT` | `25` | SMTP server port |
