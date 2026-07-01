@@ -2,7 +2,7 @@
 
 > Open-source Kanban project management — lightweight, self-hosted, and built with PHP.
 
-[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/kanboard)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.com/new/template/kanboard-2)
 
 Kanboard is a free and open source Kanban project management software. It focuses on simplicity, speed, and a minimalistic approach — no complexity, no external dependencies. Manage your projects, tasks, and team workflow visually with an intuitive Kanban board.
 
@@ -36,7 +36,7 @@ Kanboard is pre-configured for SQLite — deploy and start using it immediately.
 | `DB_PASSWORD` | — | Database password (required for MySQL/Postgres) |
 | `DB_PORT` | — | Database port (optional, defaults to driver default) |
 | `MAIL_FROM` | — | From address for email notifications |
-| `MAIL_TRANSPORT` | `mail` | Mail transport: `smtp`, `sendmail`, or `mail` |
+| `MAIL_TRANSPORT` | `smtp` | Mail transport: `smtp`, `sendmail`, or `mail` (use `smtp` for Docker) |
 | `MAIL_SMTP_HOSTNAME` | — | SMTP server hostname |
 | `MAIL_SMTP_PORT` | `25` | SMTP server port |
 | `MAIL_SMTP_USERNAME` | — | SMTP username |
@@ -175,3 +175,36 @@ If using MySQL or PostgreSQL:
 ## License
 
 This template is provided under the MIT License. Kanboard itself is licensed under the MIT License.
+
+
+# Deploy and Host
+
+Deploy this template on Railway with one click. Railway provides compute, TLS at the edge, and a public URL. The service restarts automatically on failures.
+
+## About Hosting
+
+This template runs as a single container with no external database dependencies. All data is stored using built-in storage — no PostgreSQL, Redis, or additional services required.
+
+## Why Deploy
+
+- **One-click deploy** — No configuration, no setup, just deploy
+- **Zero external dependencies** — Single container, no external database needed
+- **Automatic HTTPS** — Railway provisions TLS certificates automatically
+- **Self-healing** — Automatic restarts on failure
+- **Persistent storage** — Optional Railway volume for data persistence
+
+## Common Use Cases
+
+- Self-hosted service for personal or team use
+- Production deployment with zero maintenance overhead
+- Privacy-focused alternative to cloud-hosted solutions
+- Lightweight deployment on Railway's free tier
+
+## Dependencies for
+
+### Deployment Dependencies
+
+Kanboard uses SQLite by default — zero configuration required. MySQL or PostgreSQL can be configured via environment variables.
+
+- [Railway Account](https://railway.app) — hosting platform
+- No external database, cache, or message queue required

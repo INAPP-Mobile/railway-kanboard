@@ -28,6 +28,12 @@ EXPOSE 80
 # Default runtime configuration
 ENV PORT=80
 ENV DB_DRIVER=sqlite
+ENV DB_NAME=kanboard
+ENV PLUGIN_INSTALLER=false
+ENV DEBUG=false
+ENV MAIL_TRANSPORT=smtp
+ENV MAIL_SMTP_PORT=25
+ENV MAIL_FROM=notifications@localhost
 
 
 HEALTHCHECK --interval=30s --timeout=5s --start-period=15s --retries=3 \
