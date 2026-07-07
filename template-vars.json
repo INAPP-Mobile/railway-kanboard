@@ -1,0 +1,27 @@
+{
+  "PORT": {
+    "defaultValue": "80",
+    "description": "Port Kanboard listens on (default: 80). Railway injects PORT for routing.",
+    "isOptional": true
+  },
+  "DB_DRIVER": {
+    "defaultValue": "sqlite",
+    "description": "Database driver: sqlite, mysql, or postgres. SQLite is built-in with a persistent volume.",
+    "isOptional": true
+  },
+  "PLUGIN_INSTALLER": {
+    "defaultValue": "false",
+    "description": "Set to true to enable the plugin installer from Administration &gt; Plugins.",
+    "isOptional": true
+  },
+  "MAIL_FROM": {
+    "defaultValue": "notifications@localhost",
+    "description": "From address for email notifications (task assignments, reminders). Change if you configure SMTP.",
+    "isOptional": true
+  },
+  "DEBUG": {
+    "defaultValue": "false",
+    "description": "Set to true to enable debug mode for troubleshooting.",
+    "isOptional": true
+  }
+}
