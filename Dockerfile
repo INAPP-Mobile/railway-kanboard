@@ -1,4 +1,4 @@
-FROM docker.io/kanboard/kanboard:v1.2.54
+FROM docker.io/kanboard/kanboard:v1.2.56
 
 # Patch nginx config for Railway
 # - Remove SSL directives (not needed on Railway, which terminates TLS at the edge)
